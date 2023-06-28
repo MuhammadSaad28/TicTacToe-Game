@@ -1,0 +1,313 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 a{
+  color: #fff;
+}
+
+header img {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+main {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button:active {
+  background-color: #222;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Specific Page Styles */
+
+/* Index Page */
+
+.hero {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.instructions, .features, .about-developer, .about-page-button {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about-page-button {
+  text-align: center;
+}
+
+/* Play Page */
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #f8f8f8;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.box:hover{
+  background-color: #f8eaea;
+}
+
+.game-controls {
+  margin-top: 20px;
+}
+
+.current-player {
+  margin-top: 20px;
+}
+
+.scoreboard {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 20px;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 0;
+}
+#player-names-form{
+  margin-top: 3px;
+}
+
+.popup button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #555;
+}
+
+.popup button:active {
+  background-color: #222;
+}
+
+.popup button:focus {
+  outline: none;
+}
+
+.popup1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.popup1 h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.popup1 p {
+  margin-bottom: 0;
+}
+
+
+.popup1 button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup1 button:hover {
+  background-color: #555;
+}
+
+.popup1 button:active {
+  background-color: #222;
+}
+
+.popup1 button:focus {
+  outline: none;
+}
+
+
+/* About Page */
+
+.game-description, .developer-info, .gameplay-screenshot {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.gameplay-screenshot img {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Rules Page */
+
+.game-rules, .tips {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Contact Us Page */
+
+.contact-form, .contact-info {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  main, .container {
+    padding: 10px;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: 1fr;
+  }
+}
